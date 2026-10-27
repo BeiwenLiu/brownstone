@@ -1,6 +1,6 @@
 # Brownstone
 
-Free New York real estate salesperson course and exam prep: all 19 subjects of the NYS DOS 77-hour syllabus, 892 exam-style questions, a timed 75-question simulator, flashcards, role-plays, a math lab and more.
+New York real estate salesperson exam prep: all 19 subjects of the NYS DOS 77-hour syllabus, 3,200+ exam-style questions, timed 75-question practice exams, flashcards, role-plays and a math lab.
 
 Live site: https://beiwenliu.github.io/brownstone/
 
