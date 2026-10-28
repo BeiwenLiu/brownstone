@@ -1,8 +1,11 @@
-// Brownstone offline support. The whole app is one HTML file, so caching it (plus the icons and fonts)
-// makes it work on the subway. Strategy: load the latest app when online, fall back to the saved copy
-// when offline.
-const CACHE = "brownstone-v2";
-const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/apple-touch-icon.png", "./icons/icon-192.png", "./icons/icon-512.png"];
+// Brownstone offline support: the page, its script and style files, icons and fonts are saved so it
+// works on the subway. Strategy: load the latest page when online, fall back to the saved copy when
+// offline. Script and style files have content-hashed names, so a saved copy is always correct.
+// The build (scripts/sw-manifest.mjs) fills in BUILD and ASSETS with this release's files.
+const BUILD = "a3f65f15d0";
+const ASSETS = ["./assets/Block3D-Dur3IrCi.js","./assets/Landing-DIGEOoPq.js","./assets/boot-app-BPwlUIni.js","./assets/index-B_jGuooT.js","./assets/style-D-PhSzdd.css","./assets/web-DjPse7Aa.js"];
+const CACHE = "brownstone-" + BUILD;
+const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/apple-touch-icon.png", "./icons/icon-192.png", "./icons/icon-512.png", ...ASSETS];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
