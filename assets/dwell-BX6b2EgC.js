@@ -1,0 +1,1 @@
+const _=400,r=600,e=200,S=9e4;function i(s,n){const t=Math.max(1,s/5.5);return Math.max(800,t/n*6e4)}function h(s,n,t,a,M){const c=Math.min(n,M)-Math.max(s,a),o=Math.min(t,(M-a)*.9)||1;return Math.max(0,c)/o}export{S as I,_ as Q,r as S,e as T,i as r,h as v};
