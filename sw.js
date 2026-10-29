@@ -2,8 +2,8 @@
 // works on the subway. Strategy: load the latest page when online, fall back to the saved copy when
 // offline. Script and style files have content-hashed names, so a saved copy is always correct.
 // The build (scripts/sw-manifest.mjs) fills in BUILD and ASSETS with this release's files.
-const BUILD = "f95f30168f";
-const ASSETS = ["./assets/Block3D-Bw2JyJuC.js","./assets/Landing-Cbj2Z0iK.js","./assets/boot-app-vsXqJkNd.js","./assets/index-C920wD4B.js","./assets/style-DWeHoKg5.css","./assets/web-DGEa7wOe.js"];
+const BUILD = "06b9004750";
+const ASSETS = ["./assets/Block3D-Mp0fmOmj.js","./assets/Landing-BZz3ibuF.js","./assets/boot-app-BKbSGC7Q.js","./assets/index-DEAnuXIa.js","./assets/style-Dqy4Ouh5.css","./assets/web-1VEPztEd.js"];
 const CACHE = "brownstone-" + BUILD;
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/apple-touch-icon.png", "./icons/icon-192.png", "./icons/icon-512.png", ...ASSETS];
 
