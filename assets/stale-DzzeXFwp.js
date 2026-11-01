@@ -1,0 +1,1 @@
+const e="brownstone-reloaded";function t(o){try{sessionStorage.getItem(e)||(sessionStorage.setItem(e,"1"),location.reload())}catch{}throw o}function s(){try{sessionStorage.removeItem(e)}catch{}}const a=o=>()=>o().catch(t);export{s as l,a as o,t as r};
